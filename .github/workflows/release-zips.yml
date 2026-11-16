@@ -1,0 +1,39 @@
+# Gera um .zip por skill e anexa ao release.
+# Uso: crie um release (ex.: v1.0.0) na aba Releases — os .zip aparecem sozinhos.
+name: Gerar .zip das skills
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  zips:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compactar cada skill
+        run: |
+          mkdir -p dist
+          cd skills
+          for d in */; do
+            name="${d%/}"
+            zip -r "../dist/${name}.zip" "$name" -x '*.DS_Store'
+          done
+          cd ..
+          zip -r dist/todas-as-skills.zip skills -x 'skills/README.md' 'skills/LICENSE' '*.DS_Store'
+          ls -la dist
+      - name: Anexar ao release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/*.zip --clobber
+      - name: Guardar como artefato (execução manual)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: skills-zips
+          path: dist/*.zip
