@@ -1,0 +1,29 @@
+name: 💡 Sugerir uma skill
+description: Conte uma tarefa repetitiva da sua profissão que poderia virar skill
+title: "[Sugestão] "
+labels: ["sugestão de skill"]
+body:
+  - type: input
+    id: profissao
+    attributes:
+      label: Sua profissão / área
+      placeholder: "Ex.: contador, corretor de imóveis, professor"
+    validations:
+      required: true
+  - type: textarea
+    id: tarefa
+    attributes:
+      label: Qual tarefa você gostaria que o Claude fizesse?
+      description: Descreva a tarefa como você faz hoje, passo a passo se puder.
+    validations:
+      required: true
+  - type: textarea
+    id: entrega
+    attributes:
+      label: Como deveria ser o resultado?
+      description: Tabela, e-mail, documento, checklist… Se tiver um modelo, descreva (sem dados sigilosos).
+  - type: dropdown
+    id: frequencia
+    attributes:
+      label: Com que frequência você faz essa tarefa?
+      options: ["Todo dia", "Toda semana", "Todo mês", "De vez em quando"]
