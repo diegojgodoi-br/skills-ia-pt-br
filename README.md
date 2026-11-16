@@ -1,157 +1,174 @@
-# Skills de IA em português para profissionais brasileiros
+<div align="center">
 
-28 skills prontas para o **Claude** (formato [Agent Skills](https://agentskills.io)), escritas em português para tarefas da rotina de profissões brasileiras. Criadas pelo [iacomousar.com.br](https://iacomousar.com.br/skills).
+<img src="assets/banner.svg" alt="Skills de IA em português — 28 skills prontas para o Claude" width="100%">
 
-Uma skill é uma pasta com um arquivo `SKILL.md` que ensina o Claude a fazer uma tarefa sempre do mesmo jeito: os passos, o formato da entrega e os cuidados. Você instala uma vez e o Claude usa sozinho quando o pedido combinar.
+<br>
 
-## Como instalar
+[![Skills](https://img.shields.io/badge/skills-28-1fbf6b?style=for-the-badge)](#-catálogo)
+[![Profissões](https://img.shields.io/badge/profissões-14-f5c400?style=for-the-badge)](#-encontre-pela-sua-profissão)
+[![Idioma](https://img.shields.io/badge/idioma-PT--BR-0b2a1d?style=for-the-badge)](#)
+[![Licença MIT](https://img.shields.io/badge/licença-MIT-555?style=for-the-badge)](LICENSE)
 
-**No claude.ai (app ou site)**
+[![Stars](https://img.shields.io/github/stars/diegojgodoi-br/skills-ia-pt-br?style=social)](https://github.com/diegojgodoi-br/skills-ia-pt-br/stargazers)
 
-1. Ative a execução de código e criação de arquivos em *Configurações › Capacidades*.
-2. Baixe o `.zip` da skill na página dela em [iacomousar.com.br/skills](https://iacomousar.com.br/skills) (ou compacte a pasta da skill deste repositório).
+**Skills prontas para o Claude, escritas em português para a rotina de quem trabalha no Brasil.**<br>
+Instale uma vez — o Claude passa a fazer a tarefa sempre do mesmo jeito, com os passos, o formato e os cuidados certos.
+
+[**Instalar**](#-instalação-em-2-minutos) · [**Catálogo**](#-catálogo) · [**Por profissão**](#-encontre-pela-sua-profissão) · [**Site**](https://iacomousar.com.br/skills) · [**Sugerir uma skill**](https://github.com/diegojgodoi-br/skills-ia-pt-br/issues/new?template=sugerir-skill.yml)
+
+</div>
+
+---
+
+## ✨ Por que usar
+
+- **Em português de verdade** — termos, exemplos e contexto brasileiros (Simples Nacional, safra, notificação extrajudicial, DP…).
+- **Resultado padronizado** — cada skill define os passos e o formato da entrega, então você não precisa reescrever o prompt toda vez.
+- **Automático** — depois de instalada, o Claude usa a skill sozinho quando o seu pedido combinar.
+- **Aberto** — licença MIT: use, adapte para a sua empresa e redistribua.
+
+> **O que é uma skill?** Uma pasta com um arquivo `SKILL.md` que ensina o Claude a fazer uma tarefa. Segue o padrão aberto [Agent Skills](https://agentskills.io/).
+
+## 🚀 Instalação em 2 minutos
+
+<details open>
+<summary><b>No claude.ai (site ou app)</b></summary>
+
+1. Ative **Execução de código e criação de arquivos** em *Configurações › Capacidades*.
+2. Baixe o `.zip` da skill na [página de Releases](https://github.com/diegojgodoi-br/skills-ia-pt-br/releases/latest) ou na página dela em [iacomousar.com.br/skills](https://iacomousar.com.br/skills).
 3. Vá em *Personalizar › Skills › + › Enviar uma skill* e escolha o `.zip`.
 
-**No Claude Code**
+</details>
+
+<details>
+<summary><b>No Claude Code</b></summary>
 
 ```bash
 git clone https://github.com/diegojgodoi-br/skills-ia-pt-br.git
-cp -r skills-ia-pt-br/skills/* ~/.claude/skills/
+mkdir -p ~/.claude/skills
+cp -r skills-ia-pt-br/skills/*/ ~/.claude/skills/
 ```
 
-Depois é só pedir a tarefa normalmente.
+Quer só uma? `cp -r skills-ia-pt-br/skills/analisar-processo-judicial ~/.claude/skills/`
 
-## Skills por profissão
+</details>
 
-### Administrativo
+Depois é só pedir normalmente. Por exemplo:
 
-| Skill | O que faz |
+> *"Compare essas três propostas de fornecedor de internet e me diga qual faz mais sentido."*<br>
+> *"Monte o calendário de obrigações deste mês para um cliente do Lucro Presumido."*<br>
+> *"Explique essa recomendação de adubação para o produtor em linguagem simples."*
+
+## 📚 Catálogo
+
+
+### 💼 Gestão, finanças e contabilidade
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Organizar documentos digitais**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-documentos-digitais/SKILL.md) | Estrutura de pastas e padrão de nomes de arquivos para achar tudo rápido. | [site ↗](https://iacomousar.com.br/skills/organizar-documentos-digitais) |
+| [**Comparar propostas de fornecedores**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comparar-propostas-fornecedores/SKILL.md) | Quadro de decisão objetivo entre propostas, com critérios e pesos. | [site ↗](https://iacomousar.com.br/skills/comparar-propostas-fornecedores) |
+| [**Organizar finanças do negócio**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-financas-negocio/SKILL.md) | Separa pessoal de empresarial e prepara o fechamento do mês para o contador. | [site ↗](https://iacomousar.com.br/skills/organizar-financas-negocio) |
+| [**Analisar custos e despesas**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-custos-e-despesas/SKILL.md) | Encontra onde cortar e otimizar gastos da empresa. | [site ↗](https://iacomousar.com.br/skills/analisar-custos-e-despesas) |
+| [**Elaborar roteiro de cobrança**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-cobranca/SKILL.md) | Mensagens por faixa de atraso e estrutura de negociação de dívidas. | [site ↗](https://iacomousar.com.br/skills/elaborar-roteiro-cobranca) |
+| [**Calendário de obrigações contábeis**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-calendario-obrigacoes/SKILL.md) | Obrigações fiscais e contábeis com prazos e documentos por cliente. | [site ↗](https://iacomousar.com.br/skills/organizar-calendario-obrigacoes) |
+| [**Análise de enquadramento tributário**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-enquadramento-tributario/SKILL.md) | Simples Nacional × Lucro Presumido × Lucro Real, lado a lado. | [site ↗](https://iacomousar.com.br/skills/analisar-enquadramento-tributario) |
+
+### ⚖️ Jurídico
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Analisar processo judicial**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-processo-judicial/SKILL.md) | Extrai partes, objeto, andamentos e prazos em uma visão estruturada. | [site ↗](https://iacomousar.com.br/skills/analisar-processo-judicial) |
+| [**Rascunhar notificação extrajudicial**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-notificacao-extrajudicial/SKILL.md) | Notificações, cartas de cobrança e comunicados formais. | [site ↗](https://iacomousar.com.br/skills/rascunhar-notificacao-extrajudicial) |
+
+### 🌾 Agro
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Planejar safra agrícola**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-agricola/SKILL.md) | Plano preliminar de safra considerando cultura, clima e custos. | [site ↗](https://iacomousar.com.br/skills/planejar-safra-agricola) |
+| [**Planejamento financeiro da safra**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-custos/SKILL.md) | Custos e resultado da safra em diferentes cenários. | [site ↗](https://iacomousar.com.br/skills/planejar-safra-custos) |
+| [**Comunicar recomendação rural**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comunicar-recomendacao-rural/SKILL.md) | Traduz a recomendação técnica para a linguagem do produtor e da equipe. | [site ↗](https://iacomousar.com.br/skills/comunicar-recomendacao-rural) |
+| [**Organizar equipe rural**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-equipe-rural/SKILL.md) | Escala de trabalho, distribuição de tarefas e comunicados da propriedade. | [site ↗](https://iacomousar.com.br/skills/organizar-equipe-rural) |
+
+### 📣 Marketing e vendas
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Planejar calendário de conteúdo**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-calendario-conteudo/SKILL.md) | Calendário semanal ou mensal para redes sociais e blog. | [site ↗](https://iacomousar.com.br/skills/planejar-calendario-conteudo) |
+| [**Adaptar mensagem por canal**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/adaptar-mensagem-canal/SKILL.md) | Um conteúdo, versões para e-mail, redes sociais e blog. | [site ↗](https://iacomousar.com.br/skills/adaptar-mensagem-canal) |
+| [**Planejar promoção de vendas**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-promocao-vendas/SKILL.md) | Promoções para girar estoque, gerar caixa ou atrair clientes. | [site ↗](https://iacomousar.com.br/skills/planejar-promocao-vendas) |
+| [**Planejar estratégia de negociação**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-estrategia-negociacao/SKILL.md) | Objetivos, limites, argumentos e concessões antes da reunião. | [site ↗](https://iacomousar.com.br/skills/planejar-estrategia-negociacao) |
+| [**Analisar dados de vendas**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-dados-vendas/SKILL.md) | Padrões, tendências e oportunidades nos números de vendas. | [site ↗](https://iacomousar.com.br/skills/analisar-dados-vendas) |
+
+### 🏠 Imobiliário
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Roteiro de captação de imóveis**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-captacao/SKILL.md) | Abordagem e reunião com proprietários para conseguir exclusividade. | [site ↗](https://iacomousar.com.br/skills/elaborar-roteiro-captacao) |
+| [**Comparativo de mercado imobiliário**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-comparativo-mercado/SKILL.md) | Estudo de comparáveis para definir preço de venda ou locação. | [site ↗](https://iacomousar.com.br/skills/analisar-comparativo-mercado) |
+
+### 💻 TI e desenvolvimento
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Analisar logs de erros**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-logs-erros/SKILL.md) | Padrões, causa provável e ações corretivas a partir de logs. | [site ↗](https://iacomousar.com.br/skills/analisar-logs-erros) |
+| [**Planejar janela de mudança de TI**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-janela-mudanca/SKILL.md) | Passos, testes, rollback e comunicação da mudança. | [site ↗](https://iacomousar.com.br/skills/planejar-janela-mudanca) |
+| [**Planejar migração técnica**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-migracao-tecnica/SKILL.md) | Fases, tarefas, riscos e requisitos da migração de sistemas. | [site ↗](https://iacomousar.com.br/skills/planejar-migracao-tecnica) |
+| [**Revisar código para segurança**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/revisar-codigo-seguranca/SKILL.md) | Caça SQL Injection, XSS e outras falhas comuns. | [site ↗](https://iacomousar.com.br/skills/revisar-codigo-seguranca) |
+
+### 👥 RH e Departamento Pessoal
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Analisar dados de desligamento**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-dados-desligamento/SKILL.md) | Padrões e causas de saídas, com ações de retenção. | [site ↗](https://iacomousar.com.br/skills/analisar-dados-desligamento) |
+| [**Rascunhar políticas de RH**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-politica-rh/SKILL.md) | Texto base para férias, uso de equipamentos e outras políticas. | [site ↗](https://iacomousar.com.br/skills/rascunhar-politica-rh) |
+
+### 🎓 Educação
+
+| Skill | O que faz | |
+|---|---|---|
+| [**Planejar aula completa**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-aula-completa/SKILL.md) | Objetivos, conteúdo, atividades, recursos e avaliação. | [site ↗](https://iacomousar.com.br/skills/planejar-aula-completa) |
+| [**Rascunhar feedback para aluno**](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-feedback-aluno/SKILL.md) | Feedback construtivo e encorajador sobre trabalhos. | [site ↗](https://iacomousar.com.br/skills/rascunhar-feedback-aluno) |
+
+## 🧭 Encontre pela sua profissão
+
+| Profissão | Skills recomendadas |
 |---|---|
-| [Organizar documentos digitais](skills/organizar-documentos-digitais/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-documentos-digitais) | Propõe uma estrutura de pastas e um padrão de nomes de arquivos para organizar documentos digitais, ajudando profissionais administrativos a manter a organização e facilitar a localização de arquivos. |
-| [Elaborar roteiro de cobrança](skills/elaborar-roteiro-cobranca/SKILL.md) · [página](https://iacomousar.com.br/skills/elaborar-roteiro-cobranca) | Elabora um roteiro completo para a cobrança de dívidas, com mensagens por faixa de atraso e estrutura de negociação, para profissionais que buscam otimizar a recuperação de crédito. |
-| [Comparar propostas de fornecedores](skills/comparar-propostas-fornecedores/SKILL.md) · [página](https://iacomousar.com.br/skills/comparar-propostas-fornecedores) | Compara propostas de fornecedores e cria um quadro de decisão objetivo, ajudando profissionais administrativos a escolher a melhor opção com base em critérios definidos. |
-| [Organizar finanças do negócio](skills/organizar-financas-negocio/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-financas-negocio) | Organiza as finanças de pequenos empreendedores, padronizando a separação entre pessoal e empresarial ou preparando o fechamento mensal para o contador, garantindo clareza e conformidade. |
-| [Analisar custos e despesas](skills/analisar-custos-e-despesas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-custos-e-despesas) | Analisa custos e despesas para identificar oportunidades de redução e otimização, ajudando profissionais financeiros a gerenciar melhor os gastos da empresa. |
+| ⚖️ Advogado | [Analisar processo judicial](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-processo-judicial/SKILL.md) · [Rascunhar notificação extrajudicial](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-notificacao-extrajudicial/SKILL.md) |
+| 📊 Contador | [Calendário de obrigações contábeis](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-calendario-obrigacoes/SKILL.md) · [Análise de enquadramento tributário](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-enquadramento-tributario/SKILL.md) · [Organizar finanças do negócio](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-financas-negocio/SKILL.md) · [Analisar custos e despesas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-custos-e-despesas/SKILL.md) |
+| 🗂️ Administrativo | [Organizar documentos digitais](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-documentos-digitais/SKILL.md) · [Comparar propostas de fornecedores](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comparar-propostas-fornecedores/SKILL.md) · [Organizar finanças do negócio](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-financas-negocio/SKILL.md) · [Analisar custos e despesas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-custos-e-despesas/SKILL.md) · [Elaborar roteiro de cobrança](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-cobranca/SKILL.md) |
+| 💰 Financeiro | [Analisar custos e despesas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-custos-e-despesas/SKILL.md) · [Elaborar roteiro de cobrança](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-cobranca/SKILL.md) |
+| 🏪 Pequeno empreendedor | [Organizar finanças do negócio](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-financas-negocio/SKILL.md) · [Analisar custos e despesas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-custos-e-despesas/SKILL.md) · [Comparar propostas de fornecedores](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comparar-propostas-fornecedores/SKILL.md) · [Planejar promoção de vendas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-promocao-vendas/SKILL.md) · [Analisar dados de vendas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-dados-vendas/SKILL.md) · [Planejar calendário de conteúdo](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-calendario-conteudo/SKILL.md) · [Adaptar mensagem por canal](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/adaptar-mensagem-canal/SKILL.md) · [Planejar estratégia de negociação](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-estrategia-negociacao/SKILL.md) · [Elaborar roteiro de cobrança](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-cobranca/SKILL.md) · [Calendário de obrigações contábeis](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-calendario-obrigacoes/SKILL.md) · [Análise de enquadramento tributário](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-enquadramento-tributario/SKILL.md) · [Organizar documentos digitais](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-documentos-digitais/SKILL.md) · [Rascunhar notificação extrajudicial](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-notificacao-extrajudicial/SKILL.md) |
+| 🌱 Agrônomo / consultor rural | [Planejar safra agrícola](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-agricola/SKILL.md) · [Planejamento financeiro da safra](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-custos/SKILL.md) · [Comunicar recomendação rural](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comunicar-recomendacao-rural/SKILL.md) |
+| 🚜 Produtor rural | [Planejar safra agrícola](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-agricola/SKILL.md) · [Planejamento financeiro da safra](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-safra-custos/SKILL.md) · [Comunicar recomendação rural](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/comunicar-recomendacao-rural/SKILL.md) · [Organizar equipe rural](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/organizar-equipe-rural/SKILL.md) |
+| 🏠 Corretor de imóveis | [Roteiro de captação de imóveis](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-captacao/SKILL.md) · [Comparativo de mercado imobiliário](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-comparativo-mercado/SKILL.md) |
+| 📣 Marketing | [Planejar calendário de conteúdo](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-calendario-conteudo/SKILL.md) · [Adaptar mensagem por canal](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/adaptar-mensagem-canal/SKILL.md) · [Planejar promoção de vendas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-promocao-vendas/SKILL.md) |
+| 🤝 Vendas | [Planejar estratégia de negociação](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-estrategia-negociacao/SKILL.md) · [Analisar dados de vendas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-dados-vendas/SKILL.md) · [Planejar promoção de vendas](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-promocao-vendas/SKILL.md) · [Elaborar roteiro de cobrança](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/elaborar-roteiro-cobranca/SKILL.md) |
+| 💻 Desenvolvedor | [Revisar código para segurança](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/revisar-codigo-seguranca/SKILL.md) · [Analisar logs de erros](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-logs-erros/SKILL.md) · [Planejar migração técnica](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-migracao-tecnica/SKILL.md) |
+| 🖥️ TI e infraestrutura | [Planejar janela de mudança de TI](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-janela-mudanca/SKILL.md) · [Analisar logs de erros](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-logs-erros/SKILL.md) |
+| 👥 RH e DP | [Analisar dados de desligamento](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/analisar-dados-desligamento/SKILL.md) · [Rascunhar políticas de RH](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-politica-rh/SKILL.md) |
+| 🎓 Professor | [Planejar aula completa](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/planejar-aula-completa/SKILL.md) · [Rascunhar feedback para aluno](https://github.com/diegojgodoi-br/skills-ia-pt-br/blob/main/skills/rascunhar-feedback-aluno/SKILL.md) |
 
-### Advogado
+## ⚠️ Cuidados
 
-| Skill | O que faz |
-|---|---|
-| [Analisar processo judicial](skills/analisar-processo-judicial/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-processo-judicial) | Analisa documentos processuais para extrair informações essenciais como partes, objeto, andamentos e prazos, ajudando advogados a obter uma visão geral rápida e estruturada. |
-| [Rascunhar notificação extrajudicial](skills/rascunhar-notificacao-extrajudicial/SKILL.md) · [página](https://iacomousar.com.br/skills/rascunhar-notificacao-extrajudicial) | Rascunha notificações extrajudiciais, cartas de cobrança e comunicados formais, oferecendo um modelo inicial estruturado para advogados e profissionais que precisam de comunicações oficiais. |
+As skills orientam o Claude, mas **não substituem a revisão de um profissional**. Revise sempre o resultado antes de enviar a um cliente e evite colar dados pessoais ou sigilosos sem necessidade.
 
-### Agrônomo e Consultor Rural
+## 🤝 Contribua
 
-| Skill | O que faz |
-|---|---|
-| [Planejar safra agrícola](skills/planejar-safra-agricola/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-safra-agricola) | Ajuda agrônomos e consultores rurais a estruturar planos preliminares de safra, considerando cultura, clima e custos, para otimizar o tempo de planejamento. |
-| [Comunicar recomendação rural](skills/comunicar-recomendacao-rural/SKILL.md) · [página](https://iacomousar.com.br/skills/comunicar-recomendacao-rural) | Ajuda agrônomos a traduzir recomendações técnicas complexas para uma linguagem simples e clara, facilitando a comunicação eficaz com produtores rurais e equipes de campo. |
-| [Planejamento financeiro da safra](skills/planejar-safra-custos/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-safra-custos) | Ajuda o produtor rural a planejar a safra, calculando custos e projetando resultados financeiros para diferentes cenários, otimizando a tomada de decisões. |
+- 💡 **Tem uma tarefa repetitiva na sua profissão?** [Sugira uma skill](https://github.com/diegojgodoi-br/skills-ia-pt-br/issues/new?template=sugerir-skill.yml).
+- 🐞 Achou algo errado numa skill? [Abra uma issue](https://github.com/diegojgodoi-br/skills-ia-pt-br/issues).
+- 🔧 Melhorou uma skill? Pull requests são bem-vindos.
 
-### Contador
+## 🌐 Mais skills
 
-| Skill | O que faz |
-|---|---|
-| [Organizar calendário de obrigações contábeis](skills/organizar-calendario-obrigacoes/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-calendario-obrigacoes) | Organiza e lista as obrigações fiscais e contábeis de uma empresa para contadores, incluindo prazos e documentos, facilitando a conferência e comunicação com clientes. |
-| [Organizar finanças do negócio](skills/organizar-financas-negocio/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-financas-negocio) | Organiza as finanças de pequenos empreendedores, padronizando a separação entre pessoal e empresarial ou preparando o fechamento mensal para o contador, garantindo clareza e conformidade. |
-| [Estruturar análise de enquadramento tributário](skills/analisar-enquadramento-tributario/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-enquadramento-tributario) | Estrutura a análise de enquadramento tributário para contadores, comparando Simples Nacional, Lucro Presumido e Lucro Real, e organizando os pontos essenciais para a tomada de decisão. |
-| [Analisar custos e despesas](skills/analisar-custos-e-despesas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-custos-e-despesas) | Analisa custos e despesas para identificar oportunidades de redução e otimização, ajudando profissionais financeiros a gerenciar melhor os gastos da empresa. |
+Em [iacomousar.com.br/skills](https://iacomousar.com.br/skills) reunimos também, com explicação em português, skills de outros autores publicadas no GitHub (com link e licença de cada repositório).
 
-### Corretor de Imóveis
+---
 
-| Skill | O que faz |
-|---|---|
-| [Elaborar roteiro de captação de imóveis](skills/elaborar-roteiro-captacao/SKILL.md) · [página](https://iacomousar.com.br/skills/elaborar-roteiro-captacao) | Elabora roteiros detalhados para abordar proprietários e conduzir reuniões de captação, ajudando corretores a convencer proprietários a anunciarem seus imóveis com exclusividade. |
-| [Analisar comparativo de mercado imobiliário](skills/analisar-comparativo-mercado/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-comparativo-mercado) | Analisa dados de imóveis comparáveis para ajudar corretores a definir o preço de venda ou locação, criando um estudo de mercado detalhado para proprietários e clientes. |
+<div align="center">
 
-### Desenvolvedor
+**Se alguma skill te economizou tempo, deixe uma ⭐ — ajuda outros profissionais a encontrarem o projeto.**
 
-| Skill | O que faz |
-|---|---|
-| [Analisar logs de erros](skills/analisar-logs-erros/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-logs-erros) | Analisa trechos de logs de sistemas para identificar padrões, causas prováveis de erros e sugerir ações corretivas, ajudando profissionais de TI a diagnosticar problemas. |
-| [Planejar migração técnica de sistemas](skills/planejar-migracao-tecnica/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-migracao-tecnica) | Planeja a migração de componentes ou sistemas, detalhando fases, tarefas técnicas, riscos e requisitos para desenvolvedores e arquitetos de software. |
-| [Revisar código para segurança](skills/revisar-codigo-seguranca/SKILL.md) · [página](https://iacomousar.com.br/skills/revisar-codigo-seguranca) | Revisa trechos de código para identificar vulnerabilidades de segurança comuns, como injeção de SQL e XSS, ajudando desenvolvedores a fortalecer a proteção de suas aplicações. |
+Feito por [Diego Godoi](https://github.com/diegojgodoi-br) · [iacomousar.com.br](https://iacomousar.com.br) · Licença [MIT](LICENSE)
 
-### Financeiro
-
-| Skill | O que faz |
-|---|---|
-| [Elaborar roteiro de cobrança](skills/elaborar-roteiro-cobranca/SKILL.md) · [página](https://iacomousar.com.br/skills/elaborar-roteiro-cobranca) | Elabora um roteiro completo para a cobrança de dívidas, com mensagens por faixa de atraso e estrutura de negociação, para profissionais que buscam otimizar a recuperação de crédito. |
-| [Analisar custos e despesas](skills/analisar-custos-e-despesas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-custos-e-despesas) | Analisa custos e despesas para identificar oportunidades de redução e otimização, ajudando profissionais financeiros a gerenciar melhor os gastos da empresa. |
-
-### Marketing
-
-| Skill | O que faz |
-|---|---|
-| [Planejar calendário de conteúdo](skills/planejar-calendario-conteudo/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-calendario-conteudo) | Planeja um calendário de conteúdo mensal ou semanal para redes sociais e blog, ajudando profissionais de marketing a organizar sua estratégia e produção. |
-| [Adaptar mensagem por canal](skills/adaptar-mensagem-canal/SKILL.md) · [página](https://iacomousar.com.br/skills/adaptar-mensagem-canal) | Adapta um conteúdo existente para diferentes canais de comunicação, como e-mail, redes sociais e blog, otimizando a mensagem para cada plataforma e público. |
-| [Planejar promoção de vendas](skills/planejar-promocao-vendas/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-promocao-vendas) | Planeja promoções de vendas eficazes para pequenos empreendedores, ajudando a girar estoque, aumentar o fluxo de caixa ou atrair clientes com estratégias e ideias de divulgação. |
-
-### Pequeno Empreendedor
-
-| Skill | O que faz |
-|---|---|
-| [Organizar documentos digitais](skills/organizar-documentos-digitais/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-documentos-digitais) | Propõe uma estrutura de pastas e um padrão de nomes de arquivos para organizar documentos digitais, ajudando profissionais administrativos a manter a organização e facilitar a localização de arquivos. |
-| [Analisar custos e despesas](skills/analisar-custos-e-despesas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-custos-e-despesas) | Analisa custos e despesas para identificar oportunidades de redução e otimização, ajudando profissionais financeiros a gerenciar melhor os gastos da empresa. |
-| [Planejar estratégia de negociação](skills/planejar-estrategia-negociacao/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-estrategia-negociacao) | Planeja estratégias de negociação para vendedores, definindo objetivos, limites, argumentos e concessões, preparando-os para reuniões importantes e complexas. |
-| [Comparar propostas de fornecedores](skills/comparar-propostas-fornecedores/SKILL.md) · [página](https://iacomousar.com.br/skills/comparar-propostas-fornecedores) | Compara propostas de fornecedores e cria um quadro de decisão objetivo, ajudando profissionais administrativos a escolher a melhor opção com base em critérios definidos. |
-| [Analisar dados de vendas](skills/analisar-dados-vendas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-dados-vendas) | Analisa dados de vendas para identificar padrões, tendências e oportunidades de melhoria, ajudando vendedores a otimizar seu desempenho e estratégias. |
-| [Planejar promoção de vendas](skills/planejar-promocao-vendas/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-promocao-vendas) | Planeja promoções de vendas eficazes para pequenos empreendedores, ajudando a girar estoque, aumentar o fluxo de caixa ou atrair clientes com estratégias e ideias de divulgação. |
-| [Elaborar roteiro de cobrança](skills/elaborar-roteiro-cobranca/SKILL.md) · [página](https://iacomousar.com.br/skills/elaborar-roteiro-cobranca) | Elabora um roteiro completo para a cobrança de dívidas, com mensagens por faixa de atraso e estrutura de negociação, para profissionais que buscam otimizar a recuperação de crédito. |
-| [Organizar calendário de obrigações contábeis](skills/organizar-calendario-obrigacoes/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-calendario-obrigacoes) | Organiza e lista as obrigações fiscais e contábeis de uma empresa para contadores, incluindo prazos e documentos, facilitando a conferência e comunicação com clientes. |
-| [Organizar finanças do negócio](skills/organizar-financas-negocio/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-financas-negocio) | Organiza as finanças de pequenos empreendedores, padronizando a separação entre pessoal e empresarial ou preparando o fechamento mensal para o contador, garantindo clareza e conformidade. |
-| [Estruturar análise de enquadramento tributário](skills/analisar-enquadramento-tributario/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-enquadramento-tributario) | Estrutura a análise de enquadramento tributário para contadores, comparando Simples Nacional, Lucro Presumido e Lucro Real, e organizando os pontos essenciais para a tomada de decisão. |
-| [Adaptar mensagem por canal](skills/adaptar-mensagem-canal/SKILL.md) · [página](https://iacomousar.com.br/skills/adaptar-mensagem-canal) | Adapta um conteúdo existente para diferentes canais de comunicação, como e-mail, redes sociais e blog, otimizando a mensagem para cada plataforma e público. |
-| [Planejar calendário de conteúdo](skills/planejar-calendario-conteudo/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-calendario-conteudo) | Planeja um calendário de conteúdo mensal ou semanal para redes sociais e blog, ajudando profissionais de marketing a organizar sua estratégia e produção. |
-| [Rascunhar notificação extrajudicial](skills/rascunhar-notificacao-extrajudicial/SKILL.md) · [página](https://iacomousar.com.br/skills/rascunhar-notificacao-extrajudicial) | Rascunha notificações extrajudiciais, cartas de cobrança e comunicados formais, oferecendo um modelo inicial estruturado para advogados e profissionais que precisam de comunicações oficiais. |
-
-### Produtor Rural
-
-| Skill | O que faz |
-|---|---|
-| [Planejar safra agrícola](skills/planejar-safra-agricola/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-safra-agricola) | Ajuda agrônomos e consultores rurais a estruturar planos preliminares de safra, considerando cultura, clima e custos, para otimizar o tempo de planejamento. |
-| [Comunicar recomendação rural](skills/comunicar-recomendacao-rural/SKILL.md) · [página](https://iacomousar.com.br/skills/comunicar-recomendacao-rural) | Ajuda agrônomos a traduzir recomendações técnicas complexas para uma linguagem simples e clara, facilitando a comunicação eficaz com produtores rurais e equipes de campo. |
-| [Organização e comunicação da equipe rural](skills/organizar-equipe-rural/SKILL.md) · [página](https://iacomousar.com.br/skills/organizar-equipe-rural) | Organiza a escala de trabalho, distribui tarefas e rascunha comunicados para a equipe rural, otimizando a gestão de pessoas na propriedade. |
-| [Planejamento financeiro da safra](skills/planejar-safra-custos/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-safra-custos) | Ajuda o produtor rural a planejar a safra, calculando custos e projetando resultados financeiros para diferentes cenários, otimizando a tomada de decisões. |
-
-### Professor
-
-| Skill | O que faz |
-|---|---|
-| [Planejar aula completa](skills/planejar-aula-completa/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-aula-completa) | Planeja aulas completas para professores, incluindo objetivos, conteúdos, atividades, recursos e avaliação, auxiliando na estruturação de sequências didáticas. |
-| [Rascunhar feedback para aluno](skills/rascunhar-feedback-aluno/SKILL.md) · [página](https://iacomousar.com.br/skills/rascunhar-feedback-aluno) | Rascunha feedbacks construtivos e personalizados para trabalhos de alunos, auxiliando professores a formular avaliações escritas de forma eficiente e encorajadora. |
-
-### RH e Departamento Pessoal
-
-| Skill | O que faz |
-|---|---|
-| [Analisar dados de desligamento](skills/analisar-dados-desligamento/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-dados-desligamento) | Analisa dados de desligamentos (voluntários e involuntários) para identificar padrões, causas e sugerir ações de retenção e melhoria de processos para profissionais de RH e Departamento Pessoal. |
-| [Rascunhar políticas de RH](skills/rascunhar-politica-rh/SKILL.md) · [página](https://iacomousar.com.br/skills/rascunhar-politica-rh) | Rascunha políticas e procedimentos de RH, como férias ou uso de equipamentos, fornecendo um texto base estruturado para profissionais de RH e Departamento Pessoal. |
-
-### TI e Infraestrutura
-
-| Skill | O que faz |
-|---|---|
-| [Planejar janela de mudança de TI](skills/planejar-janela-mudanca/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-janela-mudanca) | Planeja janelas de mudança em infraestrutura de TI, detalhando passos, testes, plano de rollback e comunicação, ajudando a minimizar riscos e garantir a segurança das alterações. |
-| [Analisar logs de erros](skills/analisar-logs-erros/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-logs-erros) | Analisa trechos de logs de sistemas para identificar padrões, causas prováveis de erros e sugerir ações corretivas, ajudando profissionais de TI a diagnosticar problemas. |
-
-### Vendas
-
-| Skill | O que faz |
-|---|---|
-| [Planejar estratégia de negociação](skills/planejar-estrategia-negociacao/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-estrategia-negociacao) | Planeja estratégias de negociação para vendedores, definindo objetivos, limites, argumentos e concessões, preparando-os para reuniões importantes e complexas. |
-| [Analisar dados de vendas](skills/analisar-dados-vendas/SKILL.md) · [página](https://iacomousar.com.br/skills/analisar-dados-vendas) | Analisa dados de vendas para identificar padrões, tendências e oportunidades de melhoria, ajudando vendedores a otimizar seu desempenho e estratégias. |
-| [Planejar promoção de vendas](skills/planejar-promocao-vendas/SKILL.md) · [página](https://iacomousar.com.br/skills/planejar-promocao-vendas) | Planeja promoções de vendas eficazes para pequenos empreendedores, ajudando a girar estoque, aumentar o fluxo de caixa ou atrair clientes com estratégias e ideias de divulgação. |
-| [Elaborar roteiro de cobrança](skills/elaborar-roteiro-cobranca/SKILL.md) · [página](https://iacomousar.com.br/skills/elaborar-roteiro-cobranca) | Elabora um roteiro completo para a cobrança de dívidas, com mensagens por faixa de atraso e estrutura de negociação, para profissionais que buscam otimizar a recuperação de crédito. |
-
-## Cuidados
-
-As skills orientam o Claude, mas não substituem a revisão de um profissional. Revise sempre o resultado antes de enviar a um cliente e evite colar dados pessoais ou sigilosos sem necessidade.
-
-## Mais skills
-
-No [iacomousar.com.br/skills](https://iacomousar.com.br/skills) também reunimos, com explicação em português, skills de outros autores publicadas no GitHub (com link e licença de cada repositório).
-
-## Licença
-
-[MIT](LICENSE): livre para usar, adaptar e redistribuir, mantendo o aviso de copyright.
+</div>
